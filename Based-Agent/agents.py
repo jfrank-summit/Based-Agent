@@ -1,12 +1,11 @@
 from swarm import Agent
-from cdp import *
 from cdp import Cdp
 from openai import OpenAI
 from decimal import Decimal
 from typing import Union
 from web3 import Web3
 from web3.exceptions import ContractLogicError
-from cdp.errors import ApiError, UnsupportedAssetError
+from cdp.errors import UnsupportedAssetError
 from cdp.wallet import Wallet
 
 # Configure the CDP SDK
@@ -536,4 +535,3 @@ registrar_abi = [
 #         my_new_function,
 #     ],
 # )
-
