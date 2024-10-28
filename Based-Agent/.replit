@@ -7,9 +7,9 @@ channel = "stable-24_05"
 [unitTest]
 language = "python3"
 
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix"]
+[packaging]
+build = ["pip install -r requirements.txt"]
 
 [deployment]
-run = ["python3", "main.py"]
+run = ["python3", "run.py"]
 deploymentTarget = "cloudrun"
